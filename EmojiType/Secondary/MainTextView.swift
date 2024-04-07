@@ -93,11 +93,11 @@ extension MainViewController {
       defaults.set(Int((epm+oldEPM)/2), forKey: "epm")
     }
     countTimer.invalidate()
-    DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
-      let startVC = StartViewController()
-      startVC.modalPresentationStyle = .fullScreen
-      self.present(startVC, animated: true, completion: nil)
-    }
+//    DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+//      let startVC = StartViewController()
+//      startVC.modalPresentationStyle = .fullScreen
+//      self.present(startVC, animated: true, completion: nil)
+//    }
   }
   
   //Update timer and update EPM and detect when timer reachers 0

@@ -12,7 +12,7 @@
 		DBA1357C2BC2133C003C66D2 /* EmojiTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA1357B2BC2133C003C66D2 /* EmojiTypeTests.swift */; };
 		DBA135862BC2133C003C66D2 /* EmojiTypeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA135852BC2133C003C66D2 /* EmojiTypeUITests.swift */; };
 		DBA135882BC2133C003C66D2 /* EmojiTypeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA135872BC2133C003C66D2 /* EmojiTypeUITestsLaunchTests.swift */; };
-		DBF7DE992BC2148F004620D7 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CC0B4623D22F9900989E4F /* StartViewController.swift */; };
+		DBF7DE992BC2148F004620D7 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CC0B4623D22F9900989E4F /* StartView.swift */; };
 		DBF7DE9A2BC21491004620D7 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CC0B4223D227A300989E4F /* MainViewController.swift */; };
 		DBF7DE9B2BC214D5004620D7 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CC0B4023D2064F00989E4F /* APIService.swift */; };
 		DBF7DE9C2BC214D7004620D7 /* MainTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CC0B6323D2E21F00989E4F /* MainTextView.swift */; };
@@ -43,7 +43,7 @@
 		23CC0B4023D2064F00989E4F /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		23CC0B4223D227A300989E4F /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		23CC0B4423D229A800989E4F /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		23CC0B4623D22F9900989E4F /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		23CC0B4623D22F9900989E4F /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
 		23CC0B6323D2E21F00989E4F /* MainTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTextView.swift; sourceTree = "<group>"; };
 		DBA135672BC2133B003C66D2 /* EmojiType.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmojiType.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBA135692BC2133B003C66D2 /* EmojiTypeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiTypeApp.swift; sourceTree = "<group>"; };
@@ -117,7 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				DBA135692BC2133B003C66D2 /* EmojiTypeApp.swift */,
-				23CC0B4623D22F9900989E4F /* StartViewController.swift */,
+				23CC0B4623D22F9900989E4F /* StartView.swift */,
 				23CC0B4223D227A300989E4F /* MainViewController.swift */,
 				23CC0B4823D22FB000989E4F /* Secondary */,
 				DBA1356F2BC2133C003C66D2 /* EmojiType.entitlements */,
@@ -285,7 +285,7 @@
 				DBF7DE9B2BC214D5004620D7 /* APIService.swift in Sources */,
 				DBA1356A2BC2133B003C66D2 /* EmojiTypeApp.swift in Sources */,
 				DBF7DE9E2BC214DB004620D7 /* Extensions.swift in Sources */,
-				DBF7DE992BC2148F004620D7 /* StartViewController.swift in Sources */,
+				DBF7DE992BC2148F004620D7 /* StartView.swift in Sources */,
 				DBF7DE9C2BC214D7004620D7 /* MainTextView.swift in Sources */,
 				DBF7DE9D2BC214D9004620D7 /* EPMView.swift in Sources */,
 				DBF7DE9A2BC21491004620D7 /* MainViewController.swift in Sources */,
@@ -456,6 +456,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "Emoji Type";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -466,11 +467,11 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = npegnatz.EmojiType;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -500,6 +501,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "Emoji Type";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -510,11 +512,11 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = npegnatz.EmojiType;
 				PRODUCT_NAME = "$(TARGET_NAME)";
